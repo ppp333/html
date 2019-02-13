@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title> maded by vs code</title>
+        <meta name="author" content="John Doe">
+        <base href="image/" target="_blank">
+       <link rel="stylesheet" href= styles.css">
+        
+    </head>
+    <body>      
+        <h1 id ='Home'>  </h1>
+    
+            <div>
+                <ul>
+                <li><a href="page1.html" target="_blank">page1</a></li>
+                <li><a href="page2.html" target="_blank">page2</a></li>
+                <li><a href="image_gallery.html" target="_blank">image gallery</a></li>
+                <li><a href="https://www.naver.com" target="_top">naver</a></li>
+                <li><a href="table.html" target="_blank">환율</a></li>
+                <li><a href="javascript_exercise.html" target="_blank">javascript</a></li>
+                <li><a href="layout.html" target="_blank">layout</a></li>
+            </ul>
+            </div>
+            <div>
+                <h1> javascript </h1>
+                <div>
+                    <p id="demo"> watch here! </p>
+                    <img id = "picture" src="image/arena3.jpg" height="200" />
+                    <button onclick ="func1()">일반회원 입장하기 </button> 
+                    <button onclick ="func2()">VIP회원 입장하기 </button>
+                    <script>
+                        demo = document.getElementById("demo")
+                        function func1(){
+                            picture.src = "image/arena2.jpg"
+                            demo.innerHTML = "CLUB ARENA"
+                            demo.style.fontSize = "60px"
+                            demo.style.color = "yellow"
+                            demo.style.backgroundColor = "green"
+                            
+                        }
+                        function func2(){
+                            picture.src = "image/arena.jpg"
+                            demo.innerHTML = "CLUB ARENA"
+                            demo.style.fontSize = "60px"
+                            demo.style.color = "white"
+                            demo.style.backgroundColor = "black"
+                        }
+                    </script>
+                    <noscript>Sorry, your browser does not support JavaScript!</noscript>
+                </div>  
+            <div>
+            <p id ="time"> time : </p>
+            <script> 
+            document.getElementById("time").innerHTML = Date()
+            </script>        
+            </div>
+
+                    
+     </body>
+ </html>
+
+
